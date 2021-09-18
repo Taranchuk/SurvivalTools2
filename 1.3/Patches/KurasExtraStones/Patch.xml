@@ -2,7 +2,7 @@
 
     <Operation Class="PatchOperationFindMod">
         <mods>
-            <li>Kura's Extra Stone</li>
+            <li>[K]Extra Stone</li>
         </mods>
         <match Class="PatchOperationSequence">
             <success>Always</success>

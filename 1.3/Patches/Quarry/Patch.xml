@@ -2,7 +2,7 @@
 
     <Operation Class="PatchOperationFindMod">
         <mods>
-            <li>Quarry</li>
+            <li>Quarry 1.1</li>
         </mods>
         <match Class="PatchOperationAddModExtension">
             <xpath>/Defs/WorkGiverDef[defName="QRY_MineQuarry"]</xpath>

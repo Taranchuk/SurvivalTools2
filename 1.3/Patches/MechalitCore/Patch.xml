@@ -2,7 +2,7 @@
 
     <Operation Class="PatchOperationFindMod">
         <mods>
-            <li>Mechalit Core 1.0</li>
+            <li>Mechalit Core 1.1</li>
         </mods>
         <match Class="PatchOperationSequence">
             <success>Always</success>

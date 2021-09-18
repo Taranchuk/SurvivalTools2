@@ -2,7 +2,7 @@
 
     <Operation Class="PatchOperationFindMod">
         <mods>
-            <li>[1.0] Atlas' Materials</li>
+            <li>Materials+</li>
         </mods>
         <match Class="PatchOperationSequence">
             <success>Always</success>
