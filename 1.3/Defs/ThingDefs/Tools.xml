@@ -61,10 +61,10 @@
         <modExtensions>
             <li Class="SurvivalTools.SurvivalToolProperties">
                 <baseWorkStatFactors>
-                    <ConstructionSpeed>0.9</ConstructionSpeed>
+                    <TreeFellingSpeed>1</TreeFellingSpeed>
                 </baseWorkStatFactors>
                 <defaultSurvivalToolAssignmentTags>
-                    <li>Constructor</li>
+                    <li>PlantWorker</li>
                 </defaultSurvivalToolAssignmentTags>
             </li>
         </modExtensions>
@@ -106,8 +106,8 @@
         <modExtensions>
             <li Class="SurvivalTools.SurvivalToolProperties">
                 <baseWorkStatFactors>
-                    <ConstructionSpeed>0.9</ConstructionSpeed>
-                    <MiningSpeed>0.9</MiningSpeed>
+                    <ConstructionSpeed>1</ConstructionSpeed>
+                    <MiningSpeed>1</MiningSpeed>
                 </baseWorkStatFactors>
                 <defaultSurvivalToolAssignmentTags>
                     <li>Constructor</li>
@@ -152,7 +152,7 @@
         <modExtensions>
             <li Class="SurvivalTools.SurvivalToolProperties">
                 <baseWorkStatFactors>
-                    <PlantHarvestingSpeed>0.9</PlantHarvestingSpeed>
+                    <PlantHarvestingSpeed>1</PlantHarvestingSpeed>
                 </baseWorkStatFactors>
                 <defaultSurvivalToolAssignmentTags>
                     <li>PlantWorker</li>
@@ -237,7 +237,7 @@
         <modExtensions>
             <li Class="SurvivalTools.SurvivalToolProperties">
                 <baseWorkStatFactors>
-                    <TreeFellingSpeed>1</TreeFellingSpeed>
+                    <TreeFellingSpeed>1.1</TreeFellingSpeed>
                 </baseWorkStatFactors>
                 <defaultSurvivalToolAssignmentTags>
                     <li>PlantWorker</li>
@@ -281,8 +281,8 @@
         <modExtensions>
             <li Class="SurvivalTools.SurvivalToolProperties">
                 <baseWorkStatFactors>
-                    <DiggingSpeed>1</DiggingSpeed>
-                    <MiningYieldDigging>1</MiningYieldDigging>
+                    <DiggingSpeed>1.1</DiggingSpeed>
+                    <MiningYieldDigging>1.1</MiningYieldDigging>
                 </baseWorkStatFactors>
                 <defaultSurvivalToolAssignmentTags>
                     <li>Miner</li>
@@ -325,7 +325,7 @@
         <modExtensions>
             <li Class="SurvivalTools.SurvivalToolProperties">
                 <baseWorkStatFactors>
-                    <ConstructionSpeed>1</ConstructionSpeed>
+                    <ConstructionSpeed>1.1</ConstructionSpeed>
                 </baseWorkStatFactors>
                 <defaultSurvivalToolAssignmentTags>
                     <li>Constructor</li>
@@ -368,7 +368,7 @@
         <modExtensions>
             <li Class="SurvivalTools.SurvivalToolProperties">
                 <baseWorkStatFactors>
-                    <PlantHarvestingSpeed>1</PlantHarvestingSpeed>
+                    <PlantHarvestingSpeed>1.1</PlantHarvestingSpeed>
                 </baseWorkStatFactors>
                 <defaultSurvivalToolAssignmentTags>
                     <li>PlantWorker</li>
