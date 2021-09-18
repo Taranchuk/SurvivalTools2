@@ -48,6 +48,30 @@
         </value>
     </Operation>
 
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationTest">
+                <xpath>Defs/StatDef[defName="ConstructSuccessChance"]/parts</xpath>
+                <success>Invert</success>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/StatDef[defName="ConstructSuccessChance"]</xpath>
+                <value>
+                    <parts/>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/StatDef[defName="ConstructSuccessChance"]/parts</xpath>
+        <value>
+            <li Class="SurvivalTools.StatPart_SurvivalTool">
+                <noToolStatFactorHardcore>0.3</noToolStatFactorHardcore>
+            </li>
+        </value>
+    </Operation>
     <!-- Mining Speed -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/StatDef[defName="MiningSpeed"]/description</xpath>
