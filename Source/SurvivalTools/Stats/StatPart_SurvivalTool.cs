@@ -29,14 +29,12 @@ namespace SurvivalTools
             }
         }
 
-        public float NoToolStatFactor =>
-            (SurvivalToolsSettings.hardcoreMode) ? NoToolStatFactorHardcore : noToolStatFactor;
+        public float NoToolStatFactor => (SurvivalToolsSettings.hardcoreMode) ? NoToolStatFactorHardcore : noToolStatFactor;
 
-        private readonly float noToolStatFactor = 0.3f;
+        private float noToolStatFactor = 0.3f;
 
-        private readonly float noToolStatFactorHardcore = -1f;
-        private float NoToolStatFactorHardcore =>
-            (noToolStatFactorHardcore != -1f) ? noToolStatFactorHardcore : noToolStatFactor;
+        private float noToolStatFactorHardcore = -1f;
+        private float NoToolStatFactorHardcore => (noToolStatFactorHardcore != -1f) ? noToolStatFactorHardcore : noToolStatFactor;
 
     }
 }

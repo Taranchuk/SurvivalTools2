@@ -107,6 +107,7 @@
             <li Class="SurvivalTools.SurvivalToolProperties">
                 <baseWorkStatFactors>
                     <ConstructionSpeed>1</ConstructionSpeed>
+                    <ConstructSuccessChance>1</ConstructSuccessChance>
                     <MiningSpeed>1</MiningSpeed>
                 </baseWorkStatFactors>
                 <defaultSurvivalToolAssignmentTags>
@@ -326,6 +327,7 @@
             <li Class="SurvivalTools.SurvivalToolProperties">
                 <baseWorkStatFactors>
                     <ConstructionSpeed>1.1</ConstructionSpeed>
+                    <ConstructSuccessChance>1.1</ConstructSuccessChance>
                 </baseWorkStatFactors>
                 <defaultSurvivalToolAssignmentTags>
                     <li>Constructor</li>
@@ -425,6 +427,7 @@
                     <DiggingSpeed>1.3</DiggingSpeed>
                     <MiningYieldDigging>1.1</MiningYieldDigging>
                     <ConstructionSpeed>1.3</ConstructionSpeed>
+                    <ConstructSuccessChance>1.3</ConstructSuccessChance>
                     <PlantHarvestingSpeed>1.3</PlantHarvestingSpeed>
                 </baseWorkStatFactors>
                 <defaultSurvivalToolAssignmentTags>
