@@ -15,10 +15,10 @@ namespace SurvivalTools
 
         public override IEnumerable<Thing> PotentialWorkThingsGlobal(Pawn pawn)
         {
-            List<Designation> desList = pawn.Map.designationManager.allDesignations;
+            var desList = pawn.Map.designationManager.AllDesignations;
             for (int i = 0; i < desList.Count; i++)
             {
-                Designation des = desList[i];
+                var des = desList[i];
                 if (des.def == DesignationDefOf.CutPlant || des.def == DesignationDefOf.HarvestPlant)
                 {
                     yield return des.target.Thing;
@@ -27,13 +27,7 @@ namespace SurvivalTools
             yield break;
         }
 
-        public override PathEndMode PathEndMode
-        {
-            get
-            {
-                return PathEndMode.Touch;
-            }
-        }
+        public override PathEndMode PathEndMode => PathEndMode.Touch;
 
         public override Job JobOnThing(Pawn pawn, Thing t, bool forced = false)
         {
@@ -55,8 +49,11 @@ namespace SurvivalTools
                 return null;
             }
             if (t.def.plant?.IsTree != true)
+            {
                 return null;
-            foreach (Designation designation in pawn.Map.designationManager.AllDesignationsOn(t))
+            }
+
+            foreach (var designation in pawn.Map.designationManager.AllDesignationsOn(t))
             {
                 if (designation.def == DesignationDefOf.HarvestPlant)
                 {
