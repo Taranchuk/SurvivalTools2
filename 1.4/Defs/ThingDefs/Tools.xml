@@ -234,6 +234,7 @@
         <graphicData>
             <texPath>Things/Item/Equipment/Tool/Axe</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
         </graphicData>
         <modExtensions>
             <li Class="SurvivalTools.SurvivalToolProperties">
@@ -278,6 +279,7 @@
         <graphicData>
             <texPath>Things/Item/Equipment/Tool/Pickaxe</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
         </graphicData>
         <modExtensions>
             <li Class="SurvivalTools.SurvivalToolProperties">
@@ -322,6 +324,7 @@
         <graphicData>
             <texPath>Things/Item/Equipment/Tool/Hammer</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
         </graphicData>
         <modExtensions>
             <li Class="SurvivalTools.SurvivalToolProperties">
@@ -366,6 +369,7 @@
         <graphicData>
             <texPath>Things/Item/Equipment/Tool/Sickle</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
         </graphicData>
         <modExtensions>
             <li Class="SurvivalTools.SurvivalToolProperties">

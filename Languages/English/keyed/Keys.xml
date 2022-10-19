@@ -40,5 +40,6 @@
     <SurvivalToolAssignmentInUse>Tool assignment is in use by {0}</SurvivalToolAssignmentInUse>
     <NoSurvivalToolAssignmentSelected>No tool assignment selected</NoSurvivalToolAssignmentSelected>
     <ForcedSurvivalTools>Forced tools</ForcedSurvivalTools>
-
+	<Settings_ReduceNoToolWorkEfficiency>Reduce work efficiency without tools</Settings_ReduceNoToolWorkEfficiency>
+	<Settings_ReduceNoToolWorkEfficiency_Tooltip>Work efficiency performed without tools (like digging, plant cut, constructing) will be reduced.</Settings_ReduceNoToolWorkEfficiency_Tooltip>
 </LanguageData>

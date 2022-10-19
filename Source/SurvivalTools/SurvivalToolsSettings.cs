@@ -6,8 +6,8 @@ namespace SurvivalTools
 {
     public class SurvivalToolsSettings : ModSettings
     {
-
         public static bool hardcoreMode = false;
+        public static bool reduceNoToolWorkEfficiency = false;
         public static bool toolMapGen = true;
         public static bool toolLimit = true;
         private static float toolDegradationFactor = 1f;
@@ -30,6 +30,8 @@ namespace SurvivalTools
             options.CheckboxLabeled("Settings_HardcoreMode".Translate(), ref hardcoreMode, "Settings_HardcoreMode_Tooltip".Translate());
             GUI.color = defaultColor;
             options.Gap();
+            options.CheckboxLabeled("Settings_ReduceNoToolWorkEfficiency".Translate(), ref reduceNoToolWorkEfficiency, "Settings_ReduceNoToolWorkEfficiency_Tooltip".Translate());
+            options.Gap();
             options.CheckboxLabeled("Settings_ToolMapGen".Translate(), ref toolMapGen, "Settings_ToolMapGen_Tooltip".Translate());
             options.Gap();
             options.CheckboxLabeled("Settings_ToolLimit".Translate(), ref toolLimit, "Settings_ToolLimit_Tooltip".Translate());
@@ -47,6 +49,7 @@ namespace SurvivalTools
         public override void ExposeData()
         {
             Scribe_Values.Look(ref hardcoreMode, "hardcoreMode", false);
+            Scribe_Values.Look(ref reduceNoToolWorkEfficiency, "reduceNoToolWorkEfficiency", false);
             Scribe_Values.Look(ref toolMapGen, "toolMapGen", true);
             Scribe_Values.Look(ref toolLimit, "toolLimit", true);
             Scribe_Values.Look(ref toolDegradationFactor, "toolDegradationFactor", 1f);
@@ -64,7 +67,10 @@ namespace SurvivalTools
             GetSettings<SurvivalToolsSettings>();
         }
 
-        public override string SettingsCategory() => "SurvivalToolsSettingsCategory".Translate();
+        public override string SettingsCategory()
+        {
+            return "SurvivalToolsSettingsCategory".Translate();
+        }
 
         public override void DoSettingsWindowContents(Rect inRect)
         {
