@@ -1,5 +1,6 @@
 ﻿using RimWorld;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 using UnityEngine;
 using Verse;
 
@@ -48,7 +49,7 @@ namespace SurvivalTools
         }
 
         public override Vector2 InitialSize => new Vector2(700f, 700f);
-
+        private static readonly Regex ValidNameRegex = new Regex("^[\\p{L}0-9 '\\-]*$");
 
         public override void DoWindowContents(Rect inRect)
         {
@@ -111,7 +112,7 @@ namespace SurvivalTools
             }
             GUI.BeginGroup(rect4);
             Rect rect5 = new Rect(0f, 0f, 200f, 30f);
-            Dialog_ManageOutfits.DoNameInputRect(rect5, ref this.SelectedSurvivalToolAssignment.label);
+            this.SelectedSurvivalToolAssignment.label = Widgets.TextField(rect, this.SelectedSurvivalToolAssignment.label, 30, ValidNameRegex);
             Rect rect6 = new Rect(0f, TopAreaHeight, 300f, rect4.height - 45f - 10f);
             Rect rect7 = rect6;
             ref Vector2 ptr = ref this.scrollPosition;

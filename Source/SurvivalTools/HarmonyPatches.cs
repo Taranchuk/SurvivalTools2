@@ -42,8 +42,8 @@ namespace SurvivalTools
             h.Patch(AccessTools.Method(typeof(JobDriver_Mine), "ResetTicksToPickHit"), transpiler: transpileResetTicksToPickHit);
 
             // Thanks Mehni!
-            if (!ModCompatibilityCheck.OtherInventoryModsActive)
-                h.Patch(AccessTools.Method(typeof(FloatMenuMakerMap), "AddHumanlikeOrders"), transpiler: new HarmonyMethod(patchType, nameof(Transpile_FloatMenuMakerMad_AddHumanlikeOrders)));
+            //if (!ModCompatibilityCheck.OtherInventoryModsActive)
+            //    h.Patch(AccessTools.Method(typeof(FloatMenuMakerMap), "AddHumanlikeOrders"), transpiler: new HarmonyMethod(patchType, nameof(Transpile_FloatMenuMakerMad_AddHumanlikeOrders)));
 
             #region JobDriver Boilerplate
             h.Patch(FindMakeNewToils(typeof(JobDriver_PlantWork)), transpiler: new HarmonyMethod(patchType, nameof(Transpile_JobDriver_PlantWork_MakeNewToils)));

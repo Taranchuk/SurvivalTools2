@@ -24,10 +24,11 @@ namespace SurvivalTools
                 CodeInstruction instruction = instructionList[i];
 
                 // If equipment is a tool, adjust its label in a similar fashion to how apparel labels are adjusted (though using a helper method)
-                if (!done && instruction.opcode == OpCodes.Stloc_S && ((LocalBuilder)instruction.operand).LocalIndex == 5)
+                if (!done && instruction.opcode == OpCodes.Stloc_S && 
+                    ((LocalBuilder)instruction.operand).LocalIndex == 4)
                 {
                     yield return instruction;
-                    yield return new CodeInstruction(OpCodes.Ldloca_S, 5); // text
+                    yield return new CodeInstruction(OpCodes.Ldloca_S, 4); // text
                     yield return new CodeInstruction(OpCodes.Ldarg_3); // thing
                     yield return new CodeInstruction(OpCodes.Ldarg_0); // this
                     yield return new CodeInstruction(OpCodes.Call, AccessTools.Property(typeof(ITab_Pawn_Gear), "SelPawnForGear").GetGetMethod(true)); // this.SelPawnForGear
